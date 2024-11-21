@@ -125,6 +125,14 @@ public class CopyOnWriteArraySetDemo {
 
 ---
 
+## Key Points:
+- No Hashing: Unlike HashSet, which uses a hash table to store elements and handle collisions, CopyOnWriteArraySet does not involve any hash calculations or linked lists for collision resolution.
+
+- Underlying Array: CopyOnWriteArraySet is backed by a CopyOnWriteArrayList. When you add an element, it checks if the element already exists in the list using the contains method, which uses the equals method to determine equality.
+
+- Copy on Write: When a modification is made (such as adding or removing an element), a new copy of the underlying array is created, ensuring thread safety. This means every time you modify the set, a new array is created that includes the change
+
+---
 ## Conclusion
 
 - **`CopyOnWriteArraySet`**: Ideal for situations where iterations are more frequent than modifications. It avoids `ConcurrentModificationException` by copying the array for every modification.
