@@ -202,3 +202,12 @@ class Person {
 - It uses `hashCode()` and `equals()` to determine key uniqueness.
 - Custom objects can be used as keys by overriding these methods.
 - It is not synchronized, so thread safety should be handled externally if needed.
+
+---
+## Key Points:
+- **Initial Capacity:** The initial number of buckets is 16.
+
+- **Load Factor:** The load factor, which is a measure of how full the HashMap can get before it needs to resize, is 0.75 by default. This means that when 75% of the capacity is reached, the HashMap will resize itself to ensure efficient performance.
+
+- **Resizing:** When the number of entries exceeds the product of the initial capacity and the load factor (in this case, 12), the HashMap will resize (typically doubling the number of buckets) to accommodate more entries and reduce collisions.
+
