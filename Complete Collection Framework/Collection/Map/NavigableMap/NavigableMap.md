@@ -3,6 +3,8 @@
 ## Overview
 `NavigableMap` is an interface in Java that extends `SortedMap`. It provides additional navigation methods for finding keys based on a search criterion (e.g., nearest lower or higher keys). These methods make it more versatile than `SortedMap` when you need to perform operations like retrieving keys in reverse order or finding the closest match to a given key.
 
+The NavigableMap interface in Java extends the SortedMap interface, providing all the functionalities of a sorted map plus additional methods to navigate the map.
+
 In the code below, a `TreeMap` is used, which implements the `NavigableMap` interface, making it capable of performing all the navigation operations defined in `NavigableMap`.
 
 ---
