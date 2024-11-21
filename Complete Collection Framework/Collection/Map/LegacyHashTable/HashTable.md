@@ -8,7 +8,7 @@
 
 ## Key Features of HashTable
 
-- **Synchronized**: All methods of `HashTable` are synchronized, making it thread-safe. However, this synchronization can lead to performance overhead due to locking mechanisms that restrict concurrent access to the entire map.
+- **Synchronized**: All methods of `HashTable` are synchronized, making it thread-safe. However, this synchronization can lead to performance overhead due to locking mechanisms that restrict concurrent access to the entire map. In Java's Hashtable, both read and write operations are synchronized to ensure thread safety. This means that all operations that interact with the data structure are locked to prevent concurrent access issues.
 - **No Null Keys or Values**: Unlike `HashMap`, `HashTable` does not allow `null` as a key or a value. Attempting to insert a `null` key or value will throw a `NullPointerException`.
 - **Thread-Safe**: Due to its synchronization, `HashTable` is considered thread-safe for multiple threads accessing it concurrently.
 - **Slower than HashMap**: Since it synchronizes every operation, `HashTable` tends to be slower than `HashMap`, especially in single-threaded environments.
