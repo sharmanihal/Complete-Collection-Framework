@@ -56,7 +56,7 @@ public class LinkedHashMapDemo {
         // Each entry is added to both the hash table and the linked list.
         // The list allows iteration in insertion order.
 
-        // Creating LinkedHashMap with access order (LRU cache style)
+        //If we set access order to false, it will maintain insertion order (default)
         LinkedHashMap<String, Integer> linkedHashMap1 = new LinkedHashMap<>(16, 0.75f, false);
 
         // What happens when access order is set to true?
