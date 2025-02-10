@@ -23,7 +23,7 @@ public class ConcurrentHashMapDemo {
 
         //From Java 8 -> Tree based locking and no segmentations
         //Disadvantages of segment based locking
-        //1. If one thread is writing to one segment, other threads cannot read or write to other segments
+        //1. If one thread is writing to one segment, other threads cannot read or write to that segments
         //2. If one thread is writing to one segment, other threads cannot write to the same segment
         //3. If one thread is writing to one segment, other threads cannot read from the same segment
 
