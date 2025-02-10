@@ -32,7 +32,7 @@ public class NavigableMapDemo {
 
         //So you can say that TreeMap can have various uses
         //1. If you want just sorted feature of treemap use Map ref
-        //2. If you want navigation features enabled , use NavigableMap ref
+        //2. If you want navigation features along with sorted map features enabled , use NavigableMap ref (since Navigable Map interface extends Sorted map interface and tree map implements navigable map)
         //3. If you want features of sortedMap like first key ,last key etc. use SortedMap Ref
         //4. If you want to use all features just use TreeMap ref.
     }
