@@ -23,7 +23,7 @@ public class NavigableMapDemo {
         //ceilingKey
         System.out.println(navigableMap.ceilingKey(4));// will return the equal(if any) or next greatest key than specified key
 
-        //higherKey
+        //higherEntry
         System.out.println(navigableMap.higherEntry(1));//return entry greater than 1
 
         //decendingMap
