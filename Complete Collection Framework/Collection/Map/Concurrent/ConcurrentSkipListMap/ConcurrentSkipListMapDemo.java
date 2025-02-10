@@ -14,7 +14,7 @@ A skip list is a probabilistic data structure that allows fast search, insert, a
 It builds multiple levels of linked lists, where:
         The bottom level contains all the elements in sorted order.
         Higher levels contain fewer elements, acting as shortcuts (or "express lanes") to speed up search operations.
-                The higher levels are created probabilistically, meaning that each element has a chance (e.g., 50%) of being added to the next higher level.
+        The higher levels are created probabilistically, meaning that each element has a chance (e.g., 50%) of being added to the next higher level.
         ---
         2. ConcurrentSkipListMap Features
         Sorted Order: Keys are always stored in their natural order (or by a custom comparator if provided).
