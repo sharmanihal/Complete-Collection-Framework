@@ -20,7 +20,7 @@ It builds multiple levels of linked lists, where:
         Sorted Order: Keys are always stored in their natural order (or by a custom comparator if provided).
         Thread-Safe: Multiple threads can access it concurrently without needing explicit synchronization.
         Non-Blocking Reads: Reads are mostly lock-free and highly concurrent.
-                Logarithmic Complexity: Average time complexity for search, insert, and delete operations is .
+        Logarithmic Complexity: Average time complexity for search, insert, and delete operations is .
                 ---
                 3. How it Works
         a. Search Operation
