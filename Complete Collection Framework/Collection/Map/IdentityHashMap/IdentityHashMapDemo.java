@@ -33,7 +33,7 @@ public class IdentityHashMapDemo {
 
 
         //what if we dont use new keyword?
-        //if we dont use new keyword, the hashcode will be same and the memory address will be same
+        //if we dont use new keyword, the hashcode will be same as the memory address will be same (string pool address for both since they are the same strings) and the object hashcode is calculated using the memory address.
         //so the hashcode will be same and the index will be same
         //and the value of the existing key will be replaced
         String key5="key";
