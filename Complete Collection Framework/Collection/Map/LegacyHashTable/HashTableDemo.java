@@ -11,7 +11,7 @@ public class HashTableDemo {
         //HashTable is slower than HashMap
         //HashTable is not recommended for use
         //It locks the whole map for both read and write operations
-        //It has be replaced by ConcurrentHashMap
+        //It can be replaced by ConcurrentHashMap
 
         //Only Linked list in case of collision
         Hashtable<Integer, String> hashtable = new Hashtable<>();
